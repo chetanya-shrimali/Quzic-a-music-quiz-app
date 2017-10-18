@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bb_darkBackgroundColor" />
+
+    <TextView
+        android:id="@+id/tvQuizName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="8dp"
+        android:text="Quiz No"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="8dp"
+        android:text="Timer"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/tvQuizName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.7"
+        android:background="@color/green" />
+
+    <TextView
+        android:id="@+id/tvQuizQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUnderline"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Q1} How are u today?"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/Radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbOption1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/green"
+                android:checked="false"
+                android:text="Option one"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbOption2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/green"
+                android:checked="false"
+                android:text="Option Two"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbOption3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/green"
+                android:checked="false"
+                android:text="Option Three"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/rbOption4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/green"
+                android:checked="false"
+                android:text="Option Four"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabBack"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/left_facing_arrow"
+            android:tint="@color/white" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabCanvas"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_margin="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/canvas"
+            android:tint="@color/white" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabSubmit"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_margin="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/submit"
+            android:tint="@color/white" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabShare"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_margin="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/share"
+            android:tint="@color/white" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabNext"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_margin="16dp"
+            android:src="@drawable/right_facing_arrow" />
+    </LinearLayout>
+
+
+    <!--<com.roughike.bottombar.BottomBar
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        app:bb_activeTabColor="@color/white"
+        app:bb_inActiveTabAlpha="0.8"
+        app:bb_inActiveTabColor="@color/white"
+        app:bb_tabXmlResource="@xml/bottombar_tabs"/>-->
+
+</RelativeLayout>
